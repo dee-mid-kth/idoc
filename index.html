@@ -101,6 +101,23 @@
         2026 iMediale Film Showcase
     </footer>
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const row = document.querySelector(".row");
+  if (!row) return;
 
+  // Get posters as an array
+  const posters = Array.from(row.children);
+
+  // Fisher–Yates shuffle
+  for (let i = posters.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [posters[i], posters[j]] = [posters[j], posters[i]];
+  }
+
+  // Reattach in new order
+  posters.forEach(p => row.appendChild(p));
+});
+</script>
 </body>
 </html>
