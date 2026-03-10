@@ -1,126 +1,107 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>iDOC Interactive Documentary Festival</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMediale 2026 Ð Cinema Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background: radial-gradient(circle at top, #1a1a1a, #000000 70%);
+            color: #f5e6c8;
+            text-align: center;
+        }
 
-<style>
-body{
-  margin:0;
-  background:#111;
-  color:white;
-  font-family:Arial, Helvetica, sans-serif;
-}
+        .container {
+            padding: 60px 20px;
+        }
 
-.header{
-  text-align:center;
-  font-size:36px;
-  font-weight:bold;
-  margin:30px 0;
-}
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 3rem;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            color: #d4af37;
+        }
 
-.row{
-  display:flex;
-  overflow-x:auto;
-  gap:20px;
-  padding:40px;
-}
+        h2 {
+            font-weight: 400;
+            font-size: 1.5rem;
+            margin-bottom: 50px;
+            color: #ffffff;
+        }
 
-.poster img{
-  height:300px;
-  border-radius:8px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.8);
-  transition:transform 0.2s;
-}
+        .film-list {
+            max-width: 700px;
+            margin: 0 auto;
+            display: grid;
+            gap: 20px;
+        }
 
-.poster img:hover{
-  transform:scale(1.08);
-}
-</style>
+        .film-list a {
+            display: block;
+            padding: 15px;
+            border: 2px solid #d4af37;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #f5e6c8;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .film-list a:hover {
+            background-color: #d4af37;
+            color: #000;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 80px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        .spotlight {
+            width: 100%;
+            height: 150px;
+            background: radial-gradient(circle at center, rgba(255,255,200,0.3), transparent 70%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="header">iDOC Interactive Documentary Festival</div>
+<div class="spotlight"></div>
 
-<div class="row">
+<div class="container">
+    <h1>iMediale 2026</h1>
+    <h2>presents</h2>
 
-  <a class="poster" href="https://dee-mid-kth.github.io/idoc/menu">
-    <img src="menu.png">
-  </a>
+    <div class="film-list">
+        <a href="https://player.stornaway.io/watch/978077f3">Le Menu</a>
+        <a href="https://player.stornaway.io/watch/637d13a2">The Chronicles of Bo</a>
+        <a href="https://player.stornaway.io/watch/26e161f5">A Spark in the Dark</a>
+        <a href="https://player.stornaway.io/watch/676e990b">Inuti Scenkonstens Varld</a>
+        <a href="https://player.stornaway.io/watch/3854261c">Adrenaline</a>
+        <a href="https://player.stornaway.io/watch/bdbd473d">Dialing through the Decades</a>
+        <a href="https://player.stornaway.io/watch/8a03eb69">A Tour of Stockholm Old Town</a>
+        <a href="https://player.stornaway.io/watch/78f8ff3e">From Brew to You</a>
+        <a href="https://player.stornaway.io/watch/de6e6e1a">Stockholms Julmarknad</a>
+        <a href="https://player.stornaway.io/watch/a6ac7780">Gubbstil</a>
+        <a href="https://player.stornaway.io/watch/0b1a63cb">From Movies to Games</a>
+    </div>
 
-  <a class="poster" href="https://dee-mid-kth.github.io/idoc/chronicles-of-bo">
-    <img src="chronicle.png">
-  </a>
-
-  <a class="poster" href="https://dee-mid-kth.github.io/idoc/spark">
-    <img src="spark.png">
-  </a>
-
-  <a class="poster" href="https://dee-mid-kth.github.io/idoc/adrenaline">
-    <img src="adrenaline.png">
-  </a>
-
-  <a class="poster" href="https://dee-mid-kth.github.io/idoc/dialing">
-    <img src="dialing.png">
-  </a>
-
-  <a class="poster" href="https://dee-mid-kth.github.io/idoc/oldtown">
-    <img src="oldtown.png">
-  </a>
-
-  <a class="poster" href="https://dee-mid-kth.github.io/idoc/brew">
-    <img src="brew.png">
-  </a>
-
-  <a class="poster" href="https://dee-mid-kth.github.io/idoc/julmarknad">
-    <img src="julmarknad.png">
-  </a>
-
-  <a class="poster" href="https://dee-mid-kth.github.io/idoc/gubbstil">
-    <img src="gubbstil.png">
-  </a>
-
-  <a class="poster" href="https://dee-mid-kth.github.io/idoc/hazelight">
-    <img src="hazelight.png">
-  </a>
-
-  <a class="poster" href="https://dee-mid-kth.github.io/idoc/scenkonst">
-    <img src="scenkonst.png">
-  </a>
-
+    <footer>
+        2026 iMediale Film Showcase
+    </footer>
 </div>
-
-<script>
-  // Randomize the order of .poster links inside .row (runs once on load)
-  document.addEventListener('DOMContentLoaded', () => {
-    const row = document.querySelector('.row');
-    if (!row) return;
-
-    // Collect only the poster elements (ignore whitespace/text nodes)
-    const posters = Array.from(row.querySelectorAll('.poster'));
-
-    // Fisher–Yates shuffle
-    for (let i = posters.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [posters[i], posters[j]] = [posters[j], posters[i]];
-    }
-
-    // Re-append in the new order
-    posters.forEach(p => row.appendChild(p));
-
-    // Optional: also reshuffle (or reload) every 10 minutes
-    // setInterval(() => location.reload(), 600000); // <- uncomment to auto-refresh
-    // Or, without reloading, reshuffle in place:
-    // setInterval(() => {
-    //   for (let i = posters.length - 1; i > 0; i--) {
-    //     const j = Math.floor(Math.random() * (i + 1));
-    //     [posters[i], posters[j]] = [posters[j], posters[i]];
-    //   }
-    //   posters.forEach(p => row.appendChild(p));
-    // }, 600000);
-  });
-</script>
 
 </body>
 </html>
